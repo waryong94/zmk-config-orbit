@@ -3,23 +3,12 @@ if SHIELD_ROBA_DONGLE
 config ZMK_KEYBOARD_NAME
     default "roBa_DO"
 
-config ZMK_SPLIT
-    default y
-
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_ROBA_L
-
-config ZMK_SPLIT
-    default y
-
-endif
-
-
-if SHIELD_ROBA_R
+if SHIELD_ROBA_DONGLE || SHIELD_ROBA_L || SHIELD_ROBA_R
 
 config ZMK_SPLIT
     default y
