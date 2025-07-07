@@ -61,7 +61,3 @@
            thus, the sensor would be a `wakeup-source` */
     };
 };
-
-&trackball {
-    device = <&trackball_right>;
-};
