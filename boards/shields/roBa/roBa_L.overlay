@@ -9,3 +9,9 @@
             , <&gpio0 10 GPIO_ACTIVE_HIGH>
             ;
 };
+/ {
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+    };
+};
