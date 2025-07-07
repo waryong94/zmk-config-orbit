@@ -90,7 +90,6 @@
         trackball: trackball@0 {
             compatible = "zmk,input-split";
             reg = <0>;
-    status = "okay";
         };
     };
 
