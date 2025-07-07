@@ -6,7 +6,3 @@ url: https://github.com/kumamuk-git/zmk-config-roBa
 requires: [seeeduino_xiao_ble]
 features:
   - keys
-siblings:
-  - roBa_DONGLE
-  - roBa_L
-  - roBa_R
