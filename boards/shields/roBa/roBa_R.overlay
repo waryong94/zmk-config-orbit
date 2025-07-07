@@ -44,20 +44,24 @@
     pinctrl-names = "default", "sleep";
     cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;
 
-    trackball_sensor: trackball@0 {
+    trackball_right: trackball_right@0 {
+        status = "okay";
         compatible = "pixart,pmw3610";
         reg = <0>;
-        status = "okay";
         spi-max-frequency = <4000000>;
-        irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; //MOTION
         cpi = <400>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
+
         force-awake;
+        /* keep the sensor awake while ZMK activity state is ACTIVE,
+           fallback to normal downshift mode after ZMK goes into IDLE / SLEEP mode.
+           thus, the sensor would be a `wakeup-source` */
     };
 };
 
 &trackball {
-    device = <&trackball_sensor>;
+    device = <&trackball_right>;
 };
