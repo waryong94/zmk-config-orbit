@@ -9,8 +9,3 @@
             , <&gpio0 10 GPIO_ACTIVE_HIGH>
             ;
 };
-
-
-&trackball_listener {
-    status = "okay";
-};
