@@ -145,14 +145,14 @@ n#include <dt-bindings/zmk/input_transform.h>
             bindings = <
             &kp HOME  &kp END        &kp UP          &kp BSPC         &kp DEL            &kp EQUAL   &kp N7  &kp N8  &kp N9  &kp N0
             &kp TAB   &hm LALT LEFT  &hm LCTRL DOWN  &hm LSHFT RIGHT  &kp PG_UP           &kp PLUS   &kp N4  &kp N5  &kp N6  &kp FSLH
-            &trans    &trans         &trans          &trans          &kp PG_DN         &kp MINUS  &kp N1  &kp N2  &kp N3  &kp DOT
+            &trans    &trans        &bootloader         &trans          &kp PG_DN         &kp MINUS  &kp N1  &kp N2  &kp N3  &kp DOT
                                                             &trans             &kp N0
             >;
         };
 
         FUNCTION {
             bindings = <
-            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &bt BT_CLR  &bt BT_CLR_ALL  &trans          &trans    &trans   
+            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &bt BT_CLR  &bt BT_CLR_ALL  &trans          &trans    &bootloader
             &kp C_BRI_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_BRI_UP   &trans         &trans                &trans      &trans          &trans            &trans     &trans
             &trans        &trans        &trans        &trans        &trans               &trans    &kp C_PREV   &kp C_MUTE   &kp C_PP     &kp C_NEXT          
                                   &trans          &trans
