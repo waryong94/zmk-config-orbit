@@ -1,4 +1,4 @@
-#include <dt-bindings/zmk/input_transform.h>
+n#include <dt-bindings/zmk/input_transform.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <input/processors.dtsi>
 #include <behaviors.dtsi>
@@ -100,15 +100,15 @@
         combo_mouse5 { timeout-ms = <50>; key-positions = <28 17>; bindings = <&mkp MB5>; };
         combo_b { timeout-ms = <50>; key-positions = <25 26>; bindings = <&kp B>; };
         combo_m { timeout-ms = <50>; key-positions = <26 27>; bindings = <&kp M>; };
-        combo_q { timeout-ms = <50>; key-positions = <0 31>; bindings = <&kp LS(Q)>; };
-        combo_w { timeout-ms = <50>; key-positions = <1 31>; bindings = <&kp LS(W)>; };
-        combo_e { timeout-ms = <50>; key-positions = <2 31>; bindings = <&kp LS(E)>; };
-        combo_r { timeout-ms = <50>; key-positions = <3 31>; bindings = <&kp LS(R)>; };
-        combo_t { timeout-ms = <50>; key-positions = <4 31>; bindings = <&kp LS(T)>; };
+        combo_q { timeout-ms = <50>; key-positions = <0 30>; bindings = <&kp LS(Q)>; };
+        combo_w { timeout-ms = <50>; key-positions = <1 30>; bindings = <&kp LS(W)>; };
+        combo_e { timeout-ms = <50>; key-positions = <2 30>; bindings = <&kp LS(E)>; };
+        combo_r { timeout-ms = <50>; key-positions = <3 30>; bindings = <&kp LS(R)>; };
+        combo_t { timeout-ms = <50>; key-positions = <4 30>; bindings = <&kp LS(T)>; };
         combo_o { timeout-ms = <50>; key-positions = <7 8>; bindings = <&kp LS(O)>; };
         combo_p { timeout-ms = <50>; key-positions = <8 9>; bindings = <&kp LS(P)>; };
-		combo_boot_l { timeout-ms = <100>; key-positions = <2 3 4>; bindings = <&bootloader>; layers = <0>; };
-		combo_boot_r { timeout-ms = <100>; key-positions = <5 6 7>; bindings = <&bootloader>; layers = <0>; };
+	combo_boot_l { timeout-ms = <100>; key-positions = <2 3 4>; bindings = <&bootloader>; layers = <0>; };
+	combo_boot_r { timeout-ms = <100>; key-positions = <5 6 7>; bindings = <&bootloader>; layers = <0>; };
     };
 
     keymap {
